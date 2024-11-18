@@ -11,12 +11,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $headers = "From: $email";
 
         if (mail($to, $subject, $body, $headers)) {
-            echo "¡Gracias por contactarnos! Responderemos pronto.";
+            echo "<h1>¡Gracias por contactarnos! Responderemos pronto.</h1>";
         } else {
-            echo "Hubo un problema al enviar tu mensaje. Intenta más tarde.";
+            echo "<h1>Hubo un problema al enviar tu mensaje. Intenta más tarde.</h1>";
         }
     } else {
-        echo "Por favor, completa todos los campos.";
+        echo "<h1>Por favor, completa todos los campos.</h1>";
     }
 }
 ?>
