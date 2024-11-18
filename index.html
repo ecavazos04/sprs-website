@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialized Painting and Rework Services (SPRS)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="SPRS Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="?lang=es" class="lang-toggle">ES</a></li>
+                <li><a href="?lang=en" class="lang-toggle">EN</a></li>
+                <li><a href="?lang=zh" class="lang-toggle">中文</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <h1><?php echo $current_translations['title']; ?></h1>
+        <p><?php echo $current_translations['description']; ?></p>
+        <a href="#services" class="btn"><?php echo $current_translations['learn_more']; ?></a>
+    </section>
+    <section id="features">
+        <div class="feature">
+            <img src="images/quality.jpg" alt="Quality Assurance">
+            <h2><?php echo $current_translations['quality']; ?></h2>
+            <p>Ensuring excellence in every application.</p>
+        </div>
+        <div class="feature">
+            <img src="images/certified.jpg" alt="Certified Processes">
+            <h2><?php echo $current_translations['certified']; ?></h2>
+            <p>Industry-certified painting solutions.</p>
+        </div>
+        <div class="feature">
+            <img src="images/eco.jpg" alt="Eco-Friendly Solutions">
+            <h2><?php echo $current_translations['eco_friendly']; ?></h2>
+            <p>Committed to sustainability and the environment.</p>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 Specialized Painting and Rework Services. All Rights Reserved.</p>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
