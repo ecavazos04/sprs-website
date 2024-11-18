@@ -3,38 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SPRS - Soluciones integrales en pintura industrial, recubrimientos en polvo y líquidos, y retrabajos especializados para diversos sectores.">
-  <meta name="author" content="SPRS">
-  <title>SPRS - Soluciones en Pintura Industrial</title>
+  <title>SPRS - Especialistas en Pintura y Retrabajos Industriales</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Encabezado  -->
+  <!-- Encabezado -->
   <header>
     <div class="logo-container">
-      <img src="images/logo_sprs.png" alt="Logo SPRS">
+      <img src="images/logo_sprs.jpeg" alt="SPRS Logo" class="logo">
     </div>
-    <nav class="navbar" aria-label="Menú principal">
+    <nav class="navbar">
       <ul>
         <li><a href="#about">Nosotros</a></li>
         <li><a href="#services">Servicios</a></li>
-        <li><a href="#works">Trabajos</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#certifications">Certificaciones</a></li>
         <li><a href="#contact">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Sección: Nosotros  -->
+  <!-- Sección: Nosotros -->
   <section id="about">
     <h1>¿Quiénes Somos?</h1>
     <p>
-      En <strong>SPRS</strong>, nos especializamos en ofrecer soluciones integrales en sistemas de pintura industrial. Con una trayectoria sólida, brindamos servicios de pintura en polvo y líquida, adaptados a las necesidades específicas de cada cliente.
+      En <strong>SPRS</strong>, ofrecemos soluciones de recubrimiento industrial, pintura electrostática y retrabajos para diversas industrias, como automotriz, metalmecánica y arquitectónica.
+      Nos destacamos por nuestra experiencia, innovación y compromiso con la calidad, ayudando a nuestros clientes a alcanzar resultados excepcionales en cada proyecto.
     </p>
-    <p>
-      Nuestro compromiso es proporcionar recubrimientos de alta calidad que aseguren durabilidad y una estética impecable, cumpliendo con los estándares más exigentes del mercado.
-    </p>
-    <img src="images/about_team.jpg" alt="Equipo de trabajo SPRS" class="section-image">
+    <div class="about-highlights">
+      <div>
+        <h3>Misión</h3>
+        <p>Proveer soluciones de recubrimiento industrial que superen las expectativas de calidad y sustentabilidad.</p>
+      </div>
+      <div>
+        <h3>Visión</h3>
+        <p>Ser reconocidos como líderes en pintura industrial y retrabajos a nivel global.</p>
+      </div>
+    </div>
+    <img src="images/about_team.jpg" alt="Equipo SPRS" class="section-image">
   </section>
 
   <!-- Sección: Servicios -->
@@ -44,69 +50,73 @@
       <div class="service-item">
         <img src="images/powder_coating.jpg" alt="Pintura en Polvo" class="service-image">
         <h3>Pintura en Polvo</h3>
-        <p>Ofrecemos recubrimientos en polvo que proporcionan una protección superior y un acabado uniforme, ideales para piezas metálicas expuestas a condiciones exigentes.</p>
+        <p>Aplicamos recubrimientos electrostáticos que ofrecen durabilidad, resistencia y acabados impecables.</p>
       </div>
       <div class="service-item">
         <img src="images/liquid_painting.jpg" alt="Pintura Líquida" class="service-image">
         <h3>Pintura Líquida</h3>
-        <p>Nuestras soluciones de pintura líquida ofrecen una amplia gama de colores y acabados, adaptándose a las especificaciones técnicas y estéticas de cada proyecto.</p>
+        <p>Ofrecemos acabados personalizados de alta calidad para sectores automotriz y arquitectónico.</p>
       </div>
       <div class="service-item">
         <img src="images/rework_process.jpg" alt="Retrabajos Industriales" class="service-image">
-        <h3>Retrabajos Industriales</h3>
-        <p>Realizamos retrabajos especializados para corregir y optimizar piezas, asegurando que cumplan con los estándares de calidad requeridos.</p>
+        <h3>Retrabajos</h3>
+        <p>Restauramos piezas defectuosas con procesos que garantizan su funcionalidad y estética.</p>
       </div>
     </div>
   </section>
 
-  <!-- Sección: Trabajos -->
-  <section id="works">
-    <h2>Nuestros Trabajos</h2>
+  <!-- Sección: Proyectos -->
+  <section id="projects">
+    <h2>Proyectos Destacados</h2>
     <div class="projects-gallery">
       <div>
-        <img src="images/trabajo1.jpg" alt="Automotriz - Recubrimientos avanzados">
-        <p><strong>Automotriz:</strong> Aplicación de recubrimientos avanzados en componentes clave para la industria automotriz.</p>
+        <img src="images/project1.jpg" alt="Pintura Automotriz">
+        <p><strong>Sector Automotriz:</strong> Recubrimientos de alta precisión para componentes clave.</p>
       </div>
       <div>
-        <img src="images/trabajo2.jpg" alt="Industrial - Recubrimientos resistentes">
-        <p><strong>Industrial:</strong> Recubrimientos resistentes para maquinaria y equipos industriales, garantizando durabilidad y protección.</p>
+        <img src="images/project2.jpg" alt="Arquitectura">
+        <p><strong>Arquitectura:</strong> Pintura resistente a la intemperie para estructuras metálicas.</p>
       </div>
       <div>
-        <img src="images/trabajo3.jpg" alt="Arquitectónico - Acabados modernos">
-        <p><strong>Arquitectónico:</strong> Acabados estéticos y duraderos para estructuras y elementos arquitectónicos.</p>
+        <img src="images/project3.jpg" alt="Industria">
+        <p><strong>Industria:</strong> Soluciones robustas para maquinaria y equipos técnicos.</p>
       </div>
     </div>
   </section>
 
-  <form action="submit_form.php" method="POST" onsubmit="return validarFormulario()">
-  <label for="name">Nombre:</label>
-  <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-  
-  <label for="email">Correo Electrónico:</label>
-  <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
-  
-  <label for="phone">Teléfono:</label>
-  <input type="text" id="phone" name="phone" placeholder="Tu número de teléfono" required>
-  
-  <label for="message">Mensaje:</label>
-  <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
-  
-  <button type="submit">Enviar</button>
-</form>
-
-
+  <!-- Sección: Certificaciones -->
+  <section id="certifications">
+    <h2>Certificaciones</h2>
+    <p>Nos aseguramos de cumplir con los estándares más estrictos de la industria:</p>
+    <ul>
+      <li><strong>ISO 9001:2015</strong>: Gestión de calidad certificada.</li>
+      <li><strong>Garantía de Satisfacción:</strong> Control estricto en cada proceso.</li>
+    </ul>
+    <img src="images/certifications.jpg" alt="Certificaciones" class="section-image">
+  </section>
 
   <!-- Sección: Contacto -->
   <section id="contact">
     <h2>Contáctanos</h2>
-    <div class="contact-info">
-      <p><strong>Dirección:</strong> Calle Ejemplo 456, Parque Industrial, Monterrey, México.</p>
-      <p><strong>Teléfono:</strong> (81) 9876-5432</p>
-      <p><strong>Correo Electrónico:</strong> contacto@sprs.com</p>
-    </div>
-    <div class="map-container">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.5655736401815!2d-100.31342628499813!3d25.67868298368302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866295bf197e3d7f%3A0x6eb92e364db3f1f5!2sCalle%20Ejemplo%20456!5e0!3m2!1ses-419!2smx!4v1690014920401!5m2!1ses-419!
-::contentReference[oaicite:0]{index=0}
- 
+    <form action="submit_form.php" method="POST">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
+  <!-- Pie de Página -->
+  <footer>
+    <p>&copy; 2024 SPRS - Specialized Painting and Rework Services. Todos los derechos reservados.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
