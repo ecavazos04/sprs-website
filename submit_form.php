@@ -1,8 +1,8 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST["name"]);
-    $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
-    $message = htmlspecialchars($_POST["message"]);
+    $name = htmlspecialchars(trim($_POST["name"]));
+    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $message = htmlspecialchars(trim($_POST["message"]));
 
     if (!empty($name) && !empty($email) && !empty($message)) {
         $to = "contacto@sprs.com";
@@ -16,4 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Hubo un problema al enviar tu mensaje. Intenta más tarde.";
         }
     } else {
-        echo
+        echo "Por favor, completa todos los campos.";
+    }
+}
+?>
