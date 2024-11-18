@@ -1,12 +1,19 @@
-/* General  */
+/* General */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
   color: #333;
+  line-height: 1.6;
 }
 
+/* Justificar texto */
+.justified {
+  text-align: justify;
+}
+
+/* Header */
 header {
   display: flex;
   align-items: center;
@@ -43,7 +50,8 @@ header {
 
 /* Map Container */
 .map-container {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin: 20px 0;
 }
 
@@ -60,6 +68,11 @@ footer .social-icons a {
   margin: 0 10px;
   text-decoration: none;
 }
+
+footer .social-icons a:hover {
+  text-decoration: underline;
+}
+
 
 
 
