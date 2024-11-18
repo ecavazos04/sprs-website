@@ -33,3 +33,28 @@ header {
   text-decoration: underline;
 }
 
+/* Sección: Contacto */
+#contact {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.map-container iframe {
+  border: 0;
+  border-radius: 10px; /* Bordes redondeados para mejorar estética */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+
