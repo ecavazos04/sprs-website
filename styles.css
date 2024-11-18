@@ -7,7 +7,6 @@ body {
   color: #333;
 }
 
-/* Header */
 header {
   display: flex;
   align-items: center;
@@ -17,17 +16,16 @@ header {
   color: white;
 }
 
-.logo-container {
-  width: 200px;
-  height: 100px;
+.logo-container img {
+  max-width: 100%;
+  width: 150px; /* Tamaño ajustado */
+  height: auto;
 }
 
-/* Navbar */
 .navbar ul {
   list-style: none;
   display: flex;
   padding: 0;
-  margin: 0;
 }
 
 .navbar ul li {
@@ -43,17 +41,44 @@ header {
 /* Secciones */
 section {
   padding: 40px 20px;
-  margin: 20px 0;
 }
 
 .section-image {
   display: block;
   max-width: 80%;
   margin: 20px auto;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.service-item {
+  flex: 1 1 30%;
+  text-align: center;
+  max-width: 300px;
+}
+
+.service-item img {
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
 /* Contacto */
+.contact-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 form {
   max-width: 600px;
   margin: 0 auto;
@@ -77,24 +102,34 @@ form input, form textarea {
   border-radius: 5px;
 }
 
-/* Ajuste del logo */
-.logo-container img {
-  max-width: 100%;
-  width: 150px; /* Ajusta según el tamaño deseado */
-  height: auto; /* Mantén la proporción del logo */
-  display: block;
-  margin: 0 auto; /* Centrar el logo */
+form button {
+  background-color: #004080;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-/* Para SVG (en caso de usar <picture>) */
-.logo-container {
-  max-width: 150px; /* Ajusta el ancho máximo */
-  height: auto;
-  margin: 0 auto;
+form button:hover {
+  background-color: #003366;
 }
 
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+footer .social-icons a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
 
 footer .social-icons a:hover {
   text-decoration: underline;
 }
-
