@@ -8,11 +8,6 @@ body {
   line-height: 1.6;
 }
 
-/* Justificar texto */
-.justified {
-  text-align: justify;
-}
-
 /* Header */
 header {
   display: flex;
@@ -48,11 +43,77 @@ header {
   text-decoration: underline;
 }
 
-/* Map Container */
+/* Sección: Contacto */
+#contact {
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
 .map-container {
   display: flex;
   justify-content: center;
   margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.map-container iframe {
+  border: 0;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+}
+
+/* Formulario */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  background-color: #004080;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #003366;
 }
 
 /* Footer */
@@ -60,18 +121,21 @@ footer {
   background-color: #004080;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
+  margin-top: 40px;
 }
 
 footer .social-icons a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
+  font-size: 20px;
 }
 
 footer .social-icons a:hover {
   text-decoration: underline;
 }
+
 
 
 
