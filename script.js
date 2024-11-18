@@ -10,7 +10,7 @@ function validarFormulario() {
   }
 
   const regexCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const regexTelefono = /^\d{10}$/; // Acepta solo  números con 10 dígitos
+  const regexTelefono = /^\d{10}$/; // Acepta solo  números con 10  dígitos
 
   if (!regexCorreo.test(correo)) {
     alert("Por favor, ingresa un correo válido.");
