@@ -7,7 +7,6 @@ body {
   color: #333;
 }
 
-/* Header */
 header {
   display: flex;
   align-items: center;
@@ -22,39 +21,45 @@ header {
   width: 150px;
 }
 
-/* Redes Sociales  */
-.social-icons a {
-  text-decoration: none;
-  color: white;
-  margin: 0 5px;
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
 }
 
-.social-icons a:hover {
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
   text-decoration: underline;
 }
 
-/* Sección: Contacto  */
-#contact {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.contact-info {
-  margin-bottom: 20px;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
+/* Map Container */
 .map-container {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin: 20px 0;
 }
 
-.map-container iframe {
-  border: 0;
-  border-radius: 10px; /* Bordes redondeados para mejorar estética */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+/* Footer */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
+
+footer .social-icons a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
 
 
