@@ -7,13 +7,14 @@
   <meta name="author" content="SPRS">
   <title>SPRS - Especialistas en Pintura y Retrabajos</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <!-- Encabezado -->
   <header>
     <div class="logo-container">
       <picture>
-        <source srcset="images/logo_sprs.svg" type="image/svg+xml">
+        <source src="images/logo_sprs.svg" type="image/svg+xml">
         <img src="images/logo_sprs.png" alt="Logo SPRS">
       </picture>
     </div>
@@ -59,29 +60,10 @@
     </div>
   </section>
 
-  <!-- Sección: Proyectos -->
-  <section id="projects">
-    <h2>Proyectos Recientes</h2>
-    <div class="projects-gallery">
-      <div>
-        <img src="images/project1.jpg" alt="Proyecto 1 - Pintura Automotriz">
-        <p><strong>Pintura Automotriz:</strong> Recubrimientos avanzados para componentes clave.</p>
-      </div>
-      <div>
-        <img src="images/project2.jpg" alt="Proyecto 2 - Componentes Industriales">
-        <p><strong>Componentes Industriales:</strong> Pintura para maquinaria y piezas técnicas.</p>
-      </div>
-      <div>
-        <img src="images/project3.jpg" alt="Proyecto 3 - Arquitectura">
-        <p><strong>Arquitectura:</strong> Recubrimientos resistentes a la intemperie en estructuras metálicas.</p>
-      </div>
-    </div>
-  </section>
-
   <!-- Sección: Contacto -->
   <section id="contact">
     <h2>Contáctanos</h2>
-    <form action="submit_form.php" method="POST">
+    <form action="submit_form.php" method="POST" onsubmit="return validarFormulario()">
       <label for="name">Nombre:</label>
       <input type="text" id="name" name="name" placeholder="Tu nombre" required>
       <label for="email">Correo Electrónico:</label>
