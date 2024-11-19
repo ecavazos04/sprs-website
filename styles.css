@@ -130,6 +130,16 @@ form textarea {
     border-radius: 5px;
 }
 
+form input:invalid,
+form textarea:invalid {
+    border-color: #FF6F61; /* Red Border for Invalid Fields */
+}
+
+form input:valid,
+form textarea:valid {
+    border-color: #28A745; /* Green Border for Valid Fields */
+}
+
 form button {
     padding: 0.75rem;
     background: #FFEB3B; /* Bright Yellow Button */
@@ -144,6 +154,27 @@ form button {
 form button:hover {
     background: #FF6F61; /* Vibrant Coral Hover */
     color: #fff;
+}
+
+/* Button: Back to Top */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #FF6F61;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: none;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+#back-to-top:hover {
+    background: #FFEB3B;
 }
 
 /* Footer */
