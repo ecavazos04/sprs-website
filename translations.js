@@ -21,8 +21,12 @@ const translations = {
         contact_phone: "Phone:",
         contact_email: "Email:",
         contact_address: "Address:",
-        contact_send: "Send",
-        contact_form_title: "Get in Touch"
+        contact_form_title: "Get in Touch",
+        contact_name_label: "Name:",
+        contact_email_label: "Email:",
+        contact_phone_label: "Phone:",
+        contact_message_label: "Message:",
+        contact_send: "Send"
     },
     es: {
         nav_home: "Inicio",
@@ -46,8 +50,12 @@ const translations = {
         contact_phone: "Teléfono:",
         contact_email: "Correo electrónico:",
         contact_address: "Dirección:",
-        contact_send: "Enviar",
-        contact_form_title: "Ponte en Contacto"
+        contact_form_title: "Ponte en Contacto",
+        contact_name_label: "Nombre:",
+        contact_email_label: "Correo electrónico:",
+        contact_phone_label: "Teléfono:",
+        contact_message_label: "Mensaje:",
+        contact_send: "Enviar"
     },
     cn: {
         nav_home: "主页",
@@ -71,8 +79,12 @@ const translations = {
         contact_phone: "电话:",
         contact_email: "电子邮件:",
         contact_address: "地址:",
-        contact_send: "发送",
-        contact_form_title: "联系我们"
+        contact_form_title: "联系我们",
+        contact_name_label: "姓名:",
+        contact_email_label: "电子邮件:",
+        contact_phone_label: "电话:",
+        contact_message_label: "留言:",
+        contact_send: "发送"
     }
 };
 
