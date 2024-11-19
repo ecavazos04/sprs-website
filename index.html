@@ -3,17 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Specialized Painting and Rework Services - Your trusted partner for high-quality industrial painting and rework solutions.">
+    <meta name="keywords" content="industrial painting, rework services, powder coating, liquid coating">
+    <meta name="author" content="SPRS">
     <title>Specialized Painting and Rework Services (SPRS)</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'GA_TRACKING_ID');
+    </script>
     <script src="translations.js" defer></script>
     <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="images/logo.png" alt="SPRS Logo" />
+            <img src="images/logo.png" alt="SPRS Logo">
         </div>
         <nav>
             <ul>
@@ -21,9 +35,9 @@
                 <li><a href="#about" data-translate="nav_about">About</a></li>
                 <li><a href="#services" data-translate="nav_services">Services</a></li>
                 <li><a href="#contact" data-translate="nav_contact">Contact</a></li>
-                <li><button class="lang-toggle" data-lang="en">EN</button></li>
-                <li><button class="lang-toggle" data-lang="es">ES</button></li>
-                <li><button class="lang-toggle" data-lang="cn">CN</button></li>
+                <li><button class="lang-toggle" data-lang="en" aria-label="Change language to English">EN</button></li>
+                <li><button class="lang-toggle" data-lang="es" aria-label="Cambiar idioma a Español">ES</button></li>
+                <li><button class="lang-toggle" data-lang="cn" aria-label="将语言更改为中文">CN</button></li>
             </ul>
         </nav>
     </header>
