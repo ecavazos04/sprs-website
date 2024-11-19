@@ -1,4 +1,3 @@
-// Object holding translations for EN, ES, and CN
 const translations = {
     en: {
         nav_home: "Home",
@@ -18,7 +17,12 @@ const translations = {
         services_rework_title: "Rework Services",
         services_rework_desc: "Expert refinishing and restoration.",
         contact_title: "Contact Us",
-        contact_intro: "We’re here to assist you! Fill out the form below or reach out to us directly:"
+        contact_intro: "We’re here to assist you! Fill out the form below or reach out to us directly:",
+        contact_phone: "Phone:",
+        contact_email: "Email:",
+        contact_address: "Address:",
+        contact_send: "Send",
+        contact_form_title: "Get in Touch"
     },
     es: {
         nav_home: "Inicio",
@@ -38,7 +42,12 @@ const translations = {
         services_rework_title: "Servicios de Retrabajo",
         services_rework_desc: "Refinamiento y restauración expertos.",
         contact_title: "Contáctanos",
-        contact_intro: "¡Estamos aquí para ayudarte! Completa el formulario a continuación o contáctanos directamente:"
+        contact_intro: "¡Estamos aquí para ayudarte! Completa el formulario a continuación o contáctanos directamente:",
+        contact_phone: "Teléfono:",
+        contact_email: "Correo electrónico:",
+        contact_address: "Dirección:",
+        contact_send: "Enviar",
+        contact_form_title: "Ponte en Contacto"
     },
     cn: {
         nav_home: "主页",
@@ -58,20 +67,14 @@ const translations = {
         services_rework_title: "返工服务",
         services_rework_desc: "专家级的精加工和恢复。",
         contact_title: "联系我们",
-        contact_intro: "我们随时为您服务！请填写以下表格或直接联系我们："
+        contact_intro: "我们随时为您服务！请填写以下表格或直接联系我们：",
+        contact_phone: "电话:",
+        contact_email: "电子邮件:",
+        contact_address: "地址:",
+        contact_send: "发送",
+        contact_form_title: "联系我们"
     }
 };
-
-// Function to update the language
-function updateLanguage(lang) {
-    const elements = document.querySelectorAll("[data-translate]");
-    elements.forEach(el => {
-        const key = el.getAttribute("data-translate");
-        if (translations[lang] && translations[lang][key]) {
-            el.textContent = translations[lang][key];
-        }
-    });
-}
 
 // Event listener for language buttons
 document.addEventListener("DOMContentLoaded", () => {
@@ -83,3 +86,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// Function to update the language
+function updateLanguage(lang) {
+    const elements = document.querySelectorAll("[data-translate]");
+    elements.forEach(el => {
+        const key = el.getAttribute("data-translate");
+        if (translations[lang] && translations[lang][key]) {
+            el.textContent = translations[lang][key];
+        }
+    });
+}
