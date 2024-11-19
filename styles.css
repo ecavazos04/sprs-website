@@ -54,7 +54,7 @@ header nav ul li button:hover {
 .hero {
     background: url('images/hero.jpg') no-repeat center center/cover;
     color: #fff;
-    height: 100vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
