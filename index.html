@@ -6,8 +6,12 @@
     <meta name="description" content="Specialized Painting and Rework Services - Your trusted partner for high-quality industrial painting and rework solutions.">
     <meta name="keywords" content="industrial painting, rework services, powder coating, liquid coating">
     <meta name="author" content="SPRS">
+    <meta property="og:title" content="Specialized Painting and Rework Services">
+    <meta property="og:description" content="Your trusted partner for high-quality industrial painting and rework solutions.">
+    <meta property="og:image" content="images/hero.jpg">
+    <meta property="og:url" content="https://example.com">
     <title>Specialized Painting and Rework Services (SPRS)</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.min.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -80,6 +84,9 @@
             <label for="message" data-translate="contact_message_label">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
+            <!-- CAPTCHA integration -->
+            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+
             <button type="submit" data-translate="contact_send">Send</button>
         </form>
     </section>
@@ -100,5 +107,6 @@
             </a>
         </div>
     </footer>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
