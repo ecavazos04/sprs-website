@@ -20,22 +20,11 @@ header {
     background: #FF6F61; /* Vibrant Coral */
     color: #fff;
     animation: slideDown 1.5s ease-in-out;
-    position: relative;
-    z-index: 10;
 }
 
 header .logo img {
     max-height: 100px;
     width: auto;
-}
-
-#mobile-menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: #fff;
-    cursor: pointer;
 }
 
 header nav ul {
@@ -58,44 +47,6 @@ header nav ul li button {
 header nav ul li a:hover,
 header nav ul li button:hover {
     color: #FFEB3B; /* Bright Yellow for Hover */
-}
-
-/* Mobile Navigation */
-#main-nav {
-    display: flex;
-}
-
-@media (max-width: 768px) {
-    #mobile-menu-toggle {
-        display: block;
-    }
-
-    #main-nav {
-        display: none;
-        flex-direction: column;
-        background-color: #FF6F61;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        left: 0;
-        padding: 1rem;
-        z-index: 10;
-    }
-
-    #main-nav.active {
-        display: flex;
-    }
-
-    #main-nav ul {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    header nav ul li a,
-    header nav ul li button {
-        font-size: 1.2rem;
-        text-align: center;
-    }
 }
 
 /* Hero Section */
@@ -140,6 +91,61 @@ header nav ul li button:hover {
     color: #fff;
 }
 
+/* Section Styling */
+section {
+    padding: 2rem;
+    background: #fff;
+    margin: 1rem auto;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 1200px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #FF6F61; /* Vibrant Coral for Headings */
+    text-align: center;
+}
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.75rem;
+    background: #FFEB3B; /* Bright Yellow Button */
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+form button:hover {
+    background: #FF6F61; /* Vibrant Coral Hover */
+    color: #fff;
+}
+
 /* Footer */
 footer {
     background: #FF6F61; /* Vibrant Coral */
@@ -177,12 +183,25 @@ footer .social a:hover {
     }
 }
 
-@keyframes slideDown {
+@keyframes slideIn {
     from {
-        transform: translateY(-100%);
+        transform: translateY(50px);
+        opacity: 0;
     }
     to {
         transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
@@ -200,13 +219,11 @@ footer .social a:hover {
     }
 }
 
-@keyframes fadeInUp {
+@keyframes slideDown {
     from {
-        transform: translateY(20px);
-        opacity: 0;
+        transform: translateY(-100%);
     }
     to {
         transform: translateY(0);
-        opacity: 1;
     }
 }
