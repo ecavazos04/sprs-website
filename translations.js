@@ -17,7 +17,7 @@ const translations = {
         services_rework_title: "Rework Services",
         services_rework_desc: "Expert refinishing and restoration.",
         contact_title: "Contact Us",
-        contact_intro: "We’re here to assist you! Fill out the form below or reach out to us directly:",
+        contact_intro: "We’re here to assist you! Fill out the form below or reach out to us directly: ",
         contact_phone: "Phone:",
         contact_email: "Email:",
         contact_address: "Address:",
