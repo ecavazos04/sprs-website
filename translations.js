@@ -1,4 +1,3 @@
-// Traducciones dinámicas
 const translations = {
     en: {
         nav_home: "Home",
@@ -22,6 +21,7 @@ const translations = {
         contact_phone: "Phone:",
         contact_email: "Email:",
         contact_address: "Address:",
+        contact_form_title: "Get in Touch",
         contact_name_label: "Name:",
         contact_email_label: "Email:",
         contact_phone_label: "Phone:",
@@ -50,6 +50,7 @@ const translations = {
         contact_phone: "Teléfono:",
         contact_email: "Correo electrónico:",
         contact_address: "Dirección:",
+        contact_form_title: "Ponte en Contacto",
         contact_name_label: "Nombre:",
         contact_email_label: "Correo electrónico:",
         contact_phone_label: "Teléfono:",
@@ -78,6 +79,7 @@ const translations = {
         contact_phone: "电话:",
         contact_email: "电子邮件:",
         contact_address: "地址:",
+        contact_form_title: "联系我们",
         contact_name_label: "姓名:",
         contact_email_label: "电子邮件:",
         contact_phone_label: "电话:",
@@ -86,40 +88,24 @@ const translations = {
     }
 };
 
-// Funcionalidad del menú hamburguesa
+// Event listener for language buttons
 document.addEventListener("DOMContentLoaded", () => {
-    const menuToggle = document.getElementById("mobile-menu-toggle");
-    const mainNav = document.getElementById("main-nav");
     const langButtons = document.querySelectorAll(".lang-toggle");
-
-    // Toggle menu visibility for mobile
-    menuToggle.addEventListener("click", () => {
-        mainNav.classList.toggle("active");
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener("click", (e) => {
-        if (!mainNav.contains(e.target) && e.target !== menuToggle) {
-            mainNav.classList.remove("active");
-        }
-    });
-
-    // Language switching functionality
-    langButtons.forEach((button) => {
+    langButtons.forEach(button => {
         button.addEventListener("click", () => {
             const lang = button.getAttribute("data-lang");
             updateLanguage(lang);
         });
     });
-
-    // Function to update language dynamically
-    function updateLanguage(lang) {
-        const elements = document.querySelectorAll("[data-translate]");
-        elements.forEach((el) => {
-            const key = el.getAttribute("data-translate");
-            if (translations[lang] && translations[lang][key]) {
-                el.textContent = translations[lang][key];
-            }
-        });
-    }
 });
+
+// Function to update the language
+function updateLanguage(lang) {
+    const elements = document.querySelectorAll("[data-translate]");
+    elements.forEach(el => {
+        const key = el.getAttribute("data-translate");
+        if (translations[lang] && translations[lang][key]) {
+            el.textContent = translations[lang][key];
+        }
+    });
+}
