@@ -97,6 +97,30 @@ document.addEventListener("DOMContentLoaded", () => {
             updateLanguage(lang);
         });
     });
+
+    // Back to Top Button
+    const backToTopButton = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+
+    backToTopButton?.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Form Validation for reCAPTCHA
+    const form = document.querySelector('form');
+    form?.addEventListener('submit', (event) => {
+        const recaptcha = document.querySelector('.g-recaptcha-response')?.value;
+        if (!recaptcha) {
+            event.preventDefault();
+            alert('Please complete the CAPTCHA.');
+        }
+    });
 });
 
 // Function to update the language
