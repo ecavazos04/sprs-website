@@ -51,15 +51,19 @@
             <li><strong>Email:</strong> info@sprsservices.com</li>
             <li><strong>Address:</strong> 123 Industrial Way, Suite 100, Industry City, IC 12345</li>
         </ul>
-        <form action="https://formspree.io/f/mayklywy" method="post">
-            <label for="name" data-translate="contact_name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email" data-translate="contact_email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-            <label for="message" data-translate="contact_message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea><br>
-            <button type="submit" data-translate="contact_submit">Send</button>
-        </form>
+        <form action="https://formspree.io/f/xyzypevp" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    <input type="hidden" name="_subject" value="New Contact Form Submission">
+    <input type="hidden" name="_redirect" value="https://yourwebsite.com/thank-you.html">
+    <input type="text" name="_honeypot" style="display:none">
+    <button type="submit">Send</button>
+</form>
+
     </section>
     <footer>
         <p data-translate="footer_copyright">© 2024 Specialized Painting and Rework Services. All Rights Reserved.</p>
