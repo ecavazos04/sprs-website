@@ -1,26 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Specialized Painting and Rework Services - Your trusted partner for high-quality industrial painting and rework solutions.">
-    <meta name="keywords" content="industrial painting, rework services, powder coating, liquid coating">
-    <meta name="author" content="SPRS">
-    <meta property="og:title" content="Specialized Painting and Rework Services">
-    <meta property="og:description" content="Your trusted partner for high-quality industrial painting and rework solutions.">
-    <meta property="og:image" content="images/hero.jpg">
-    <meta property="og:url" content="https://example.com">
     <title>Specialized Painting and Rework Services (SPRS)</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Font Awesome -->
+    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="translations.js" defer></script>
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="images/logo.png" alt="SPRS Logo">
+            <img src="images/logo.png" alt="SPRS Logo" />
         </div>
         <nav>
             <ul>
@@ -28,9 +21,9 @@
                 <li><a href="#about" data-translate="nav_about">About</a></li>
                 <li><a href="#services" data-translate="nav_services">Services</a></li>
                 <li><a href="#contact" data-translate="nav_contact">Contact</a></li>
-                <li><button class="lang-toggle" data-lang="en" aria-label="Change language to English">EN</button></li>
-                <li><button class="lang-toggle" data-lang="es" aria-label="Cambiar idioma a Español">ES</button></li>
-                <li><button class="lang-toggle" data-lang="cn" aria-label="将语言更改为中文">CN</button></li>
+                <li><button class="lang-toggle" data-lang="en">EN</button></li>
+                <li><button class="lang-toggle" data-lang="es">ES</button></li>
+                <li><button class="lang-toggle" data-lang="cn">CN</button></li>
             </ul>
         </nav>
     </header>
@@ -62,14 +55,17 @@
         <form action="https://formspree.io/f/xyzypevp" method="POST">
             <label for="name" data-translate="contact_name_label">Name:</label>
             <input type="text" id="name" name="name" required>
+
             <label for="email" data-translate="contact_email_label">Email:</label>
             <input type="email" id="email" name="email" required>
+
             <label for="phone" data-translate="contact_phone_label">Phone:</label>
             <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
             <small>Format: 1234567890</small>
+
             <label for="message" data-translate="contact_message_label">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+
             <button type="submit" data-translate="contact_send">Send</button>
         </form>
     </section>
@@ -90,7 +86,5 @@
             </a>
         </div>
     </footer>
-    <script src="scripts.js" defer></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
