@@ -173,6 +173,88 @@ footer .social a:hover {
     color: #FFEB3B; /* Bright yellow on hover */
 }
 
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    section {
+        padding: 1.5rem;
+        width: 95%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.9rem;
+    }
+
+    footer .social {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    footer .social a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo img {
+        max-height: 70px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero .btn {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        padding: 1rem 0.5rem;
+    }
+}
+
 /* Animations */
 @keyframes fadeIn {
     from {
