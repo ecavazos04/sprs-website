@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialized Painting and Rework Services (SPRS)</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="translations.js" defer></script>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="SPRS Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" data-translate="nav_home">Home</a></li>
+                <li><a href="#about" data-translate="nav_about">About</a></li>
+                <li><a href="#services" data-translate="nav_services">Services</a></li>
+                <li><a href="#contact" data-translate="nav_contact">Contact</a></li>
+                <li><button class="lang-toggle" data-lang="en">EN</button></li>
+                <li><button class="lang-toggle" data-lang="es">ES</button></li>
+                <li><button class="lang-toggle" data-lang="cn">CN</button></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <h1 data-translate="home_title">Welcome to SPRS</h1>
+        <p data-translate="home_description">Your trusted partner for high-quality industrial painting and rework solutions.</p>
+        <a href="#services" class="btn" data-translate="home_explore">Explore Our Services</a>
+    </section>
+    <section id="about">
+        <h2 data-translate="about_title">About Us</h2>
+        <p data-translate="about_content">Specialized Painting and Rework Services (SPRS) is a leader in the industrial painting sector...</p>
+    </section>
+    <section id="services">
+        <h2 data-translate="services_title">Our Services</h2>
+        <ul>
+            <li><strong data-translate="services_powder_title">Powder Coating:</strong> <span data-translate="services_powder_desc">Durable and eco-friendly coatings.</span></li>
+            <li><strong data-translate="services_liquid_title">Liquid Coating:</strong> <span data-translate="services_liquid_desc">Custom finishes for complex geometries.</span></li>
+            <li><strong data-translate="services_rework_title">Rework Services:</strong> <span data-translate="services_rework_desc">Expert refinishing and restoration.</span></li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2 data-translate="contact_title">Contact Us</h2>
+        <p data-translate="contact_intro">We’re here to assist you! Fill out the form below:</p>
+        <form action="https://formspree.io/f/mayklywy" method="post">
+            <label for="name" data-translate="contact_name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email" data-translate="contact_email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message" data-translate="contact_message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <button type="submit" data-translate="contact_submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p data-translate="footer_copyright">© 2024 Specialized Painting and Rework Services. All Rights Reserved.</p>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
